@@ -1,14 +1,11 @@
-# fastapi-template
-FastAPI simple template
-
 # Deploy
 ## Dockerfile
 ```
-docker build -t fastapi-template .
-docker run -p 9001:9001 --name fastapi-template-container -d fastapi-template
+docker build -t grass .
+docker run -p 9001:9001 --name grass-container -d grass
 ```
 Optionals
 ```
-docker exec -it fastapi-template-container /bin/bash
-docker logs -f fastapi-template-container
+docker exec -it grass-container /bin/bash
+docker logs -f grass-container
 ```
